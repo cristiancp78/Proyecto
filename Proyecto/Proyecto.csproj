@@ -52,6 +52,12 @@
     <Compile Include="Area_Cuadrado.Designer.cs">
       <DependentUpon>Area_Cuadrado.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cuenta_Letras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuenta_Letras.Designer.cs">
+      <DependentUpon>Cuenta_Letras.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,18 @@
     </Compile>
     <Compile Include="Invertir_Palabra.Designer.cs">
       <DependentUpon>Invertir_Palabra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mayor_dos_Numeros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mayor_dos_Numeros.Designer.cs">
+      <DependentUpon>Mayor_dos_Numeros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pangramas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pangramas.Designer.cs">
+      <DependentUpon>Pangramas.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

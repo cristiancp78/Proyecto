@@ -36,6 +36,7 @@ namespace Proyecto
             this.btnM5 = new System.Windows.Forms.Button();
             this.btnM6 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_Cerrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnM1
@@ -46,6 +47,7 @@ namespace Proyecto
             this.btnM1.TabIndex = 0;
             this.btnM1.Text = "Modulo 1- Mayor de dos numeros";
             this.btnM1.UseVisualStyleBackColor = true;
+            this.btnM1.Click += new System.EventHandler(this.btnM1_Click);
             // 
             // btnM2
             // 
@@ -65,6 +67,7 @@ namespace Proyecto
             this.btnM3.TabIndex = 2;
             this.btnM3.Text = "Modulo 3- Cuenta letras";
             this.btnM3.UseVisualStyleBackColor = true;
+            this.btnM3.Click += new System.EventHandler(this.btnM3_Click);
             // 
             // btnM4
             // 
@@ -84,6 +87,7 @@ namespace Proyecto
             this.btnM5.TabIndex = 4;
             this.btnM5.Text = "Modulo 5- Pangramas";
             this.btnM5.UseVisualStyleBackColor = true;
+            this.btnM5.Click += new System.EventHandler(this.btnM5_Click);
             // 
             // btnM6
             // 
@@ -105,11 +109,22 @@ namespace Proyecto
             this.label1.TabIndex = 6;
             this.label1.Text = "Seleccione el modulo al que quiere dirigirse ";
             // 
+            // btn_Cerrar
+            // 
+            this.btn_Cerrar.Location = new System.Drawing.Point(157, 220);
+            this.btn_Cerrar.Name = "btn_Cerrar";
+            this.btn_Cerrar.Size = new System.Drawing.Size(87, 26);
+            this.btn_Cerrar.TabIndex = 7;
+            this.btn_Cerrar.Text = "Cerrar";
+            this.btn_Cerrar.UseVisualStyleBackColor = true;
+            this.btn_Cerrar.Click += new System.EventHandler(this.btn_Cerrar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(436, 268);
+            this.Controls.Add(this.btn_Cerrar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnM6);
             this.Controls.Add(this.btnM5);
@@ -133,6 +148,7 @@ namespace Proyecto
         private System.Windows.Forms.Button btnM5;
         private System.Windows.Forms.Button btnM6;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_Cerrar;
     }
 }
 

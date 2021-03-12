@@ -37,5 +37,31 @@ namespace Proyecto
             suma.Visible = true;
             this.Visible = false;
         }
+
+        private void btn_Cerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnM1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Mayor_dos_Numeros MN = new Mayor_dos_Numeros();
+            MN.Show();
+        }
+
+        private void btnM3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Cuenta_Letras CL = new Cuenta_Letras();
+            CL.Show();
+        }
+
+        private void btnM5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Pangramas Pg = new Pangramas();
+            Pg.Show();
+        }
     }
 }
