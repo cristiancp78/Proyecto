@@ -55,6 +55,7 @@ namespace Proyecto
             this.btnM2.TabIndex = 1;
             this.btnM2.Text = "Modulo 2- Calcular area cuadrado";
             this.btnM2.UseVisualStyleBackColor = true;
+            this.btnM2.Click += new System.EventHandler(this.btnM2_Click);
             // 
             // btnM3
             // 
@@ -73,6 +74,7 @@ namespace Proyecto
             this.btnM4.TabIndex = 3;
             this.btnM4.Text = "Modulo 4- Invertir palabra";
             this.btnM4.UseVisualStyleBackColor = true;
+            this.btnM4.Click += new System.EventHandler(this.btnM4_Click);
             // 
             // btnM5
             // 
@@ -91,6 +93,7 @@ namespace Proyecto
             this.btnM6.TabIndex = 5;
             this.btnM6.Text = "Modulo 6- Una suma dificil";
             this.btnM6.UseVisualStyleBackColor = true;
+            this.btnM6.Click += new System.EventHandler(this.btnM6_Click);
             // 
             // label1
             // 

@@ -16,5 +16,26 @@ namespace Proyecto
         {
             InitializeComponent();
         }
+
+        private void btnM2_Click(object sender, EventArgs e)
+        {
+            Area_Cuadrado area = new Area_Cuadrado();
+            area.Visible = true;
+            this.Visible = false;
+        }
+
+        private void btnM4_Click(object sender, EventArgs e)
+        {
+            Invertir_Palabra invertir = new Invertir_Palabra();
+            invertir.Visible = true;
+            this.Visible = false;
+        }
+
+        private void btnM6_Click(object sender, EventArgs e)
+        {
+            Suma_Dificil suma = new Suma_Dificil();
+            suma.Visible = true;
+            this.Visible = false;
+        }
     }
 }
