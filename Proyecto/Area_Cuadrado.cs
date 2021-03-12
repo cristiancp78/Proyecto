@@ -72,5 +72,10 @@ namespace Proyecto
             txtAltura.Clear();
             txtArea.Clear();
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

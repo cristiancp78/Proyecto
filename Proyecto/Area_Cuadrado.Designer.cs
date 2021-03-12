@@ -39,6 +39,7 @@ namespace Proyecto
             this.btnIngresar = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -112,11 +113,11 @@ namespace Proyecto
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(126, 235);
+            this.btnVolver.Location = new System.Drawing.Point(98, 233);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 23);
             this.btnVolver.TabIndex = 8;
-            this.btnVolver.Text = "Volver";
+            this.btnVolver.Text = "Volver Menu";
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
@@ -130,11 +131,22 @@ namespace Proyecto
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Location = new System.Drawing.Point(204, 233);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(75, 23);
+            this.btnCerrar.TabIndex = 10;
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // Area_Cuadrado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(378, 308);
+            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnIngresar);
@@ -164,5 +176,6 @@ namespace Proyecto
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Button btnCerrar;
     }
 }

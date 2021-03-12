@@ -16,5 +16,12 @@ namespace Proyecto
         {
             InitializeComponent();
         }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            Form1 volver = new Form1();
+            volver.Visible = true;
+            this.Visible = false;
+        }
     }
 }
