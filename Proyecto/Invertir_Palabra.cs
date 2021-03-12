@@ -23,5 +23,17 @@ namespace Proyecto
             volver.Visible = true;
             this.Visible = false;
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+               
+            }
+            catch(Exception exception)
+            {
+
+            }
+        }
     }
 }

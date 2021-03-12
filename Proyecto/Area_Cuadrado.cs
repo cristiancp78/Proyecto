@@ -40,7 +40,7 @@ namespace Proyecto
                     int altura = Convert.ToInt32(txtAltura.Text);
                     int area = base_cuadrado * altura;
 
-                    txtArea.Text = "" + area;
+                    labelArea.Text = "" + area;
 
                 }
                 else
@@ -70,7 +70,7 @@ namespace Proyecto
         {
             txtBase.Clear();
             txtAltura.Clear();
-            txtArea.Clear();
+            labelArea.Text="";
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)

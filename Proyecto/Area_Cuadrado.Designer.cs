@@ -35,11 +35,11 @@ namespace Proyecto
             this.label3 = new System.Windows.Forms.Label();
             this.txtAltura = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtArea = new System.Windows.Forms.TextBox();
             this.btnIngresar = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.labelArea = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -94,13 +94,6 @@ namespace Proyecto
             this.label4.Text = "El area del cuadrado es ";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // txtArea
-            // 
-            this.txtArea.Location = new System.Drawing.Point(156, 190);
-            this.txtArea.Name = "txtArea";
-            this.txtArea.Size = new System.Drawing.Size(119, 20);
-            this.txtArea.TabIndex = 6;
-            // 
             // btnIngresar
             // 
             this.btnIngresar.Location = new System.Drawing.Point(196, 138);
@@ -141,16 +134,24 @@ namespace Proyecto
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // labelArea
+            // 
+            this.labelArea.AutoSize = true;
+            this.labelArea.Location = new System.Drawing.Point(153, 193);
+            this.labelArea.Name = "labelArea";
+            this.labelArea.Size = new System.Drawing.Size(0, 13);
+            this.labelArea.TabIndex = 11;
+            // 
             // Area_Cuadrado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(378, 308);
+            this.Controls.Add(this.labelArea);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnIngresar);
-            this.Controls.Add(this.txtArea);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtAltura);
             this.Controls.Add(this.label3);
@@ -172,10 +173,10 @@ namespace Proyecto
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtAltura;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtArea;
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Label labelArea;
     }
 }
