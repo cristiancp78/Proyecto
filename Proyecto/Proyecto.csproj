@@ -72,8 +72,14 @@
     <Compile Include="Suma_Dificil.Designer.cs">
       <DependentUpon>Suma_Dificil.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Area_Cuadrado.resx">
+      <DependentUpon>Area_Cuadrado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invertir_Palabra.resx">
+      <DependentUpon>Invertir_Palabra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
