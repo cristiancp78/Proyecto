@@ -35,9 +35,9 @@ namespace Proyecto
             this.label3 = new System.Windows.Forms.Label();
             this.btnIngresar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.btnVolver = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.labelInvertir = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -93,13 +93,7 @@ namespace Proyecto
             this.btnNuevo.TabIndex = 5;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(143, 162);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(115, 20);
-            this.textBox2.TabIndex = 6;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnVolver
             // 
@@ -119,15 +113,24 @@ namespace Proyecto
             this.btnCerrar.TabIndex = 8;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // labelInvertir
+            // 
+            this.labelInvertir.AutoSize = true;
+            this.labelInvertir.Location = new System.Drawing.Point(140, 165);
+            this.labelInvertir.Name = "labelInvertir";
+            this.labelInvertir.Size = new System.Drawing.Size(0, 13);
+            this.labelInvertir.TabIndex = 9;
             // 
             // Invertir_Palabra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(333, 273);
+            this.Controls.Add(this.labelInvertir);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnVolver);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.label3);
@@ -149,8 +152,8 @@ namespace Proyecto
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Label labelInvertir;
     }
 }

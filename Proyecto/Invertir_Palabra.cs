@@ -28,12 +28,38 @@ namespace Proyecto
         {
             try
             {
-               
+               if(txtPalabra.Text != "")
+                {
+                    String f1 = txtPalabra.Text;
+                    String f2 ="";
+                     foreach(char letra in f1)
+                    {
+                        f2 = letra + f2;
+                    }
+                   
+
+                    labelInvertir.Text = "" +f2;
+                }
+                else
+                {
+                    MessageBox.Show("Falta Escribir la palabra ");
+                }
             }
             catch(Exception exception)
             {
-
+                MessageBox.Show(exception.Message, "Error");
             }
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            txtPalabra.Clear();
+            labelInvertir.Text = "";
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
