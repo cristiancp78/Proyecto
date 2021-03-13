@@ -29,6 +29,7 @@ namespace Proyecto
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Suma_Dificil));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNumeros = new System.Windows.Forms.TextBox();
@@ -43,7 +44,9 @@ namespace Proyecto
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(107, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 19);
@@ -53,6 +56,8 @@ namespace Proyecto
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(12, 69);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(104, 13);
@@ -69,35 +74,41 @@ namespace Proyecto
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(12, 153);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 13);
+            this.label3.Size = new System.Drawing.Size(133, 13);
             this.label3.TabIndex = 3;
-            this.label3.Text = "La suma de los numero es";
+            this.label3.Text = "La suma de los numero es:";
             // 
             // btnNuevo
             // 
+            this.btnNuevo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnNuevo.Location = new System.Drawing.Point(58, 104);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(75, 23);
             this.btnNuevo.TabIndex = 4;
             this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.UseVisualStyleBackColor = false;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnIngresar
             // 
+            this.btnIngresar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnIngresar.Location = new System.Drawing.Point(169, 104);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(75, 23);
             this.btnIngresar.TabIndex = 5;
             this.btnIngresar.Text = "Ingresar";
-            this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.UseVisualStyleBackColor = false;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // labelSuma
             // 
             this.labelSuma.AutoSize = true;
+            this.labelSuma.BackColor = System.Drawing.Color.Transparent;
+            this.labelSuma.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.labelSuma.Location = new System.Drawing.Point(171, 153);
             this.labelSuma.Name = "labelSuma";
             this.labelSuma.Size = new System.Drawing.Size(0, 13);
@@ -105,28 +116,31 @@ namespace Proyecto
             // 
             // btnVolver
             // 
+            this.btnVolver.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnVolver.Location = new System.Drawing.Point(58, 194);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 23);
             this.btnVolver.TabIndex = 7;
             this.btnVolver.Text = "Volver Menu";
-            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.UseVisualStyleBackColor = false;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // btnCerrar
             // 
+            this.btnCerrar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnCerrar.Location = new System.Drawing.Point(169, 194);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(75, 23);
             this.btnCerrar.TabIndex = 8;
             this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // Suma_Dificil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(347, 244);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnVolver);
