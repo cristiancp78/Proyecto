@@ -29,6 +29,7 @@ namespace Proyecto
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Invertir_Palabra));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPalabra = new System.Windows.Forms.TextBox();
@@ -43,7 +44,9 @@ namespace Proyecto
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(93, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 19);
@@ -53,6 +56,8 @@ namespace Proyecto
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(12, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 13);
@@ -69,55 +74,63 @@ namespace Proyecto
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(12, 165);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 13);
+            this.label3.Size = new System.Drawing.Size(117, 13);
             this.label3.TabIndex = 3;
-            this.label3.Text = "La palabra invertida es";
+            this.label3.Text = "La palabra invertida es:";
             // 
             // btnIngresar
             // 
+            this.btnIngresar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnIngresar.Location = new System.Drawing.Point(158, 118);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(75, 23);
             this.btnIngresar.TabIndex = 4;
             this.btnIngresar.Text = "Ingresar";
-            this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.UseVisualStyleBackColor = false;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // btnNuevo
             // 
+            this.btnNuevo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnNuevo.Location = new System.Drawing.Point(65, 118);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(75, 23);
             this.btnNuevo.TabIndex = 5;
             this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.UseVisualStyleBackColor = false;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnVolver
             // 
+            this.btnVolver.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnVolver.Location = new System.Drawing.Point(65, 205);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 23);
             this.btnVolver.TabIndex = 7;
             this.btnVolver.Text = "Volver Menu";
-            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.UseVisualStyleBackColor = false;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // btnCerrar
             // 
+            this.btnCerrar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnCerrar.Location = new System.Drawing.Point(158, 205);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(75, 23);
             this.btnCerrar.TabIndex = 8;
             this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // labelInvertir
             // 
             this.labelInvertir.AutoSize = true;
+            this.labelInvertir.BackColor = System.Drawing.Color.Transparent;
+            this.labelInvertir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.labelInvertir.Location = new System.Drawing.Point(140, 165);
             this.labelInvertir.Name = "labelInvertir";
             this.labelInvertir.Size = new System.Drawing.Size(0, 13);
@@ -127,6 +140,7 @@ namespace Proyecto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(333, 273);
             this.Controls.Add(this.labelInvertir);
             this.Controls.Add(this.btnCerrar);
