@@ -12,6 +12,7 @@ namespace Proyecto
 
         private void btn_Contar_Click(object sender, EventArgs e)
         {
+
             String Palabra = tb_Frase.Text;
             Palabra.ToLower();
             String Letra = tb_Letra.Text;

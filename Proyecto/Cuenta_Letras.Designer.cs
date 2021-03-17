@@ -54,7 +54,9 @@ namespace Proyecto
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(230, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(182, 24);
@@ -71,7 +73,9 @@ namespace Proyecto
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(104, 102);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(173, 18);
@@ -81,7 +85,9 @@ namespace Proyecto
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(104, 141);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(224, 18);
@@ -98,7 +104,9 @@ namespace Proyecto
             // lb_NumeroVeces
             // 
             this.lb_NumeroVeces.AutoSize = true;
+            this.lb_NumeroVeces.BackColor = System.Drawing.Color.Transparent;
             this.lb_NumeroVeces.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_NumeroVeces.ForeColor = System.Drawing.Color.White;
             this.lb_NumeroVeces.Location = new System.Drawing.Point(249, 206);
             this.lb_NumeroVeces.Name = "lb_NumeroVeces";
             this.lb_NumeroVeces.Size = new System.Drawing.Size(283, 18);
@@ -131,6 +139,8 @@ namespace Proyecto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Proyecto.Properties.Resources.fondo_6;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(667, 309);
             this.Controls.Add(this.btn_VolverMenu);
             this.Controls.Add(this.btn_Cerrar);
