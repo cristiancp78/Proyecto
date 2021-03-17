@@ -49,7 +49,10 @@ namespace Proyecto
             {
                 MessageBox.Show(er.Message, "Error");
             }
-            
+
+            tb_PrimerN.Text = "";
+            tb_SegundoN.Text = "";
+
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -54,7 +54,9 @@ namespace Proyecto
             // lbl_PrimerN
             // 
             this.lbl_PrimerN.AutoSize = true;
+            this.lbl_PrimerN.BackColor = System.Drawing.Color.Transparent;
             this.lbl_PrimerN.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_PrimerN.ForeColor = System.Drawing.Color.White;
             this.lbl_PrimerN.Location = new System.Drawing.Point(69, 110);
             this.lbl_PrimerN.Name = "lbl_PrimerN";
             this.lbl_PrimerN.Size = new System.Drawing.Size(208, 18);
@@ -63,15 +65,17 @@ namespace Proyecto
             // 
             // tb_PrimerN
             // 
-            this.tb_PrimerN.Location = new System.Drawing.Point(353, 111);
+            this.tb_PrimerN.Location = new System.Drawing.Point(340, 111);
             this.tb_PrimerN.Name = "tb_PrimerN";
-            this.tb_PrimerN.Size = new System.Drawing.Size(120, 20);
+            this.tb_PrimerN.Size = new System.Drawing.Size(165, 20);
             this.tb_PrimerN.TabIndex = 2;
             // 
             // lbl_Titulo
             // 
             this.lbl_Titulo.AutoSize = true;
+            this.lbl_Titulo.BackColor = System.Drawing.Color.Transparent;
             this.lbl_Titulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Titulo.ForeColor = System.Drawing.Color.White;
             this.lbl_Titulo.Location = new System.Drawing.Point(114, 35);
             this.lbl_Titulo.Name = "lbl_Titulo";
             this.lbl_Titulo.Size = new System.Drawing.Size(321, 32);
@@ -80,15 +84,17 @@ namespace Proyecto
             // 
             // tb_SegundoN
             // 
-            this.tb_SegundoN.Location = new System.Drawing.Point(353, 147);
+            this.tb_SegundoN.Location = new System.Drawing.Point(340, 147);
             this.tb_SegundoN.Name = "tb_SegundoN";
-            this.tb_SegundoN.Size = new System.Drawing.Size(120, 20);
+            this.tb_SegundoN.Size = new System.Drawing.Size(165, 20);
             this.tb_SegundoN.TabIndex = 4;
             // 
             // lbl_SegundoN
             // 
             this.lbl_SegundoN.AutoSize = true;
+            this.lbl_SegundoN.BackColor = System.Drawing.Color.Transparent;
             this.lbl_SegundoN.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_SegundoN.ForeColor = System.Drawing.Color.White;
             this.lbl_SegundoN.Location = new System.Drawing.Point(69, 146);
             this.lbl_SegundoN.Name = "lbl_SegundoN";
             this.lbl_SegundoN.Size = new System.Drawing.Size(225, 18);
@@ -98,7 +104,9 @@ namespace Proyecto
             // lbl_MayorN
             // 
             this.lbl_MayorN.AutoSize = true;
+            this.lbl_MayorN.BackColor = System.Drawing.Color.Transparent;
             this.lbl_MayorN.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_MayorN.ForeColor = System.Drawing.Color.White;
             this.lbl_MayorN.Location = new System.Drawing.Point(137, 201);
             this.lbl_MayorN.Name = "lbl_MayorN";
             this.lbl_MayorN.Size = new System.Drawing.Size(157, 18);
@@ -139,6 +147,8 @@ namespace Proyecto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Proyecto.Properties.Resources.fondo_6;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(568, 322);
             this.Controls.Add(this.btn_VolverMenu);
             this.Controls.Add(this.button2);
