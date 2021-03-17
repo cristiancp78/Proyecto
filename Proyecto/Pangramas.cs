@@ -19,40 +19,47 @@ namespace Proyecto
 
         private void btn_Verificar_Click(object sender, EventArgs e)
         {
-            String[] array = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o"
-            , "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
-            String pPalabra = tb_PrimeraF.Text;
-            String sPalabra = tb_SegundaF.Text;
-            bool verificarP; 
-            bool verificarS;
-
-            for (int i = 0; i < array.Length; i++)
+            try
             {
-               verificarP = pPalabra.ToLower().Contains(array[i]);
+                String[] array = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o"
+            , "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
+                String pPalabra = tb_PrimeraF.Text;
+                String sPalabra = tb_SegundaF.Text;
+                bool verificarP;
+                bool verificarS;
 
-                if (verificarP)
+                for (int i = 0; i < array.Length; i++)
                 {
-                    lb_PrimeraF.Text = "SI";
+                    verificarP = pPalabra.ToLower().Contains(array[i]);
 
+                    if (verificarP)
+                    {
+                        lb_PrimeraF.Text = "SI";
+
+                    }
+                    else
+                    {
+                        lb_PrimeraF.Text = "NO";
+
+                    }
+
+                    verificarS = sPalabra.ToLower().Contains(array[i]);
+
+                    if (verificarS)
+                    {
+
+                        lb_SegundaF.Text = "SI";
+                    }
+                    else
+                    {
+
+                        lb_SegundaF.Text = "NO";
+                    }
                 }
-                else
-                {
-                    lb_PrimeraF.Text = "NO";
-
-                }
-
-                verificarS = sPalabra.ToLower().Contains(array[i]);
-
-                if (verificarS)
-                {
-
-                    lb_SegundaF.Text = "SI";
-                }
-                else
-                {
-
-                    lb_SegundaF.Text = "NO";
-                }
+            }
+            catch (Exception er)
+            {
+                MessageBox.Show(er.Message, "Error");
             }
 
         }

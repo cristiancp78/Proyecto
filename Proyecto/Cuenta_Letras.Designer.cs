@@ -69,6 +69,7 @@ namespace Proyecto
             this.tb_Frase.Name = "tb_Frase";
             this.tb_Frase.Size = new System.Drawing.Size(169, 20);
             this.tb_Frase.TabIndex = 2;
+            this.tb_Frase.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_Frase_KeyPress);
             // 
             // label2
             // 
@@ -100,6 +101,7 @@ namespace Proyecto
             this.tb_Letra.Name = "tb_Letra";
             this.tb_Letra.Size = new System.Drawing.Size(169, 20);
             this.tb_Letra.TabIndex = 5;
+            this.tb_Letra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_Letra_KeyPress);
             // 
             // lb_NumeroVeces
             // 
