@@ -68,6 +68,7 @@ namespace Proyecto
             catch(Exception exception)
             {
                 MessageBox.Show(exception.Message, "Error");
+                txtNumeros.Clear();
             }
         }
 
