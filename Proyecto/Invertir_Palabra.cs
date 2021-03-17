@@ -30,20 +30,29 @@ namespace Proyecto
             {
                if(txtPalabra.Text != "")
                 {
-                    String f1 = txtPalabra.Text;
-                    String f2 ="";
-                     foreach(char letra in f1)
+                    String palabra = txtPalabra.Text;
+                    if (isNumeric(palabra))
                     {
-                        f2 = letra + f2;
+                        String invertida = "";
+                        foreach (char letra in palabra)
+                        {
+                            invertida = letra + invertida;
+                        }
+
+
+                        labelInvertir.Text = "" + invertida;
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se pueden escribir numeros");
                     }
                    
-
-                    labelInvertir.Text = "" +f2;
                 }
                 else
                 {
                     MessageBox.Show("Falta Escribir la palabra ");
                 }
+
             }
             catch(Exception exception)
             {
@@ -61,5 +70,27 @@ namespace Proyecto
         {
             Application.Exit();
         }
+
+
+        public static bool isNumeric(String palabra)
+        {
+
+            bool resultado;
+
+            try
+            {
+                Convert.ToInt32(palabra);
+                resultado = false;
+            }
+            catch (Exception excepcion)
+            {
+                resultado = true;
+            }
+
+            return resultado;
+        }
+
+
+
     }
 }
