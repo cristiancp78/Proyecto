@@ -18,13 +18,13 @@ namespace Proyecto
                 {
                     String Palabra = tb_Frase.Text;
                     String Letra = tb_Letra.Text;
-                    int index = Palabra.ToLower().IndexOf(Letra);
+                    int index = Palabra.ToLower().IndexOf(Letra.ToLower());
                     int cont = 0;
 
                     while (index != -1)
                     {
                         cont++;
-                        index = Palabra.IndexOf(Letra, index + 1);
+                        index = Palabra.ToLower().IndexOf(Letra.ToLower(), index + 1);
                     }
 
 
