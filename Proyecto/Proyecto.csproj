@@ -99,6 +99,9 @@
     <EmbeddedResource Include="Mayor_dos_Numeros.resx">
       <DependentUpon>Mayor_dos_Numeros.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pangramas.resx">
+      <DependentUpon>Pangramas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
