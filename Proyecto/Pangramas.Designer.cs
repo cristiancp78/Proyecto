@@ -70,6 +70,7 @@ namespace Proyecto
             this.tb_PrimeraF.Name = "tb_PrimeraF";
             this.tb_PrimeraF.Size = new System.Drawing.Size(192, 20);
             this.tb_PrimeraF.TabIndex = 2;
+            this.tb_PrimeraF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_PrimeraF_KeyPress);
             // 
             // label2
             // 
@@ -89,6 +90,7 @@ namespace Proyecto
             this.tb_SegundaF.Name = "tb_SegundaF";
             this.tb_SegundaF.Size = new System.Drawing.Size(192, 20);
             this.tb_SegundaF.TabIndex = 4;
+            this.tb_SegundaF.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_SegundaF_KeyPress);
             // 
             // label3
             // 

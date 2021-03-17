@@ -21,40 +21,48 @@ namespace Proyecto
         {
             try
             {
-                String[] array = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o"
-            , "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
-                String pPalabra = tb_PrimeraF.Text;
-                String sPalabra = tb_SegundaF.Text;
-                bool verificarP;
-                bool verificarS;
-
-                for (int i = 0; i < array.Length; i++)
+                if (tb_PrimeraF.Text != "" && tb_SegundaF.Text != "")
                 {
-                    verificarP = pPalabra.ToLower().Contains(array[i]);
 
-                    if (verificarP)
+                    String[] array = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o"
+                    , "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
+                    String pPalabra = tb_PrimeraF.Text;
+                    String sPalabra = tb_SegundaF.Text;
+                    bool verificarP;
+                    bool verificarS;
+
+                    for (int i = 0; i < array.Length; i++)
                     {
-                        lb_PrimeraF.Text = "SI";
+                        verificarP = pPalabra.ToLower().Contains(array[i]);
 
+                        if (verificarP)
+                        {
+                            lb_PrimeraF.Text = "SI";
+
+                        }
+                        else
+                        {
+                            lb_PrimeraF.Text = "NO";
+
+                        }
+
+                        verificarS = sPalabra.ToLower().Contains(array[i]);
+
+                        if (verificarS)
+                        {
+
+                            lb_SegundaF.Text = "SI";
+                        }
+                        else
+                        {
+
+                            lb_SegundaF.Text = "NO";
+                        }
                     }
-                    else
-                    {
-                        lb_PrimeraF.Text = "NO";
-
-                    }
-
-                    verificarS = sPalabra.ToLower().Contains(array[i]);
-
-                    if (verificarS)
-                    {
-
-                        lb_SegundaF.Text = "SI";
-                    }
-                    else
-                    {
-
-                        lb_SegundaF.Text = "NO";
-                    }
+                }
+                else
+                {
+                    MessageBox.Show("Debe escribir un texto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception er)
@@ -74,6 +82,22 @@ namespace Proyecto
             this.Hide();
             Form1 F = new Form1();
             F.Show();
+        }
+
+        private void tb_PrimeraF_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tb_SegundaF_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
